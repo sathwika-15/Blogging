@@ -33,6 +33,37 @@
         a:hover {
             text-decoration: underline;
         }
+        .nav {
+    display: flex;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: 700;
+    position: relative;
+}
+.nav a:hover {
+    color: #ffdd57;
+}
+.nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ffdd57;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.nav a:hover::after {
+    width: 100%;
+}
     </style>
 </head>
 <body>
