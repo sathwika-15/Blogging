@@ -41,8 +41,22 @@
 
             <button class="accordion">Blog Post 2</button>
             <div class="panel">
-                <p>Date: August 8, 2024</p>
-                <p>This is the content of the second blog post. </p>
+                <p><i>Date: August 8, 2024</i></p>
+                <p><strong>Tackling the "Plus One" LeetCode Problem</strong><br>
+                    Welcome to Day 2 of my blogging journey! Today, I tackled an "Easy" level LeetCode problem called "Plus One." This problem might seem straightforward, but it offers a great opportunity to practice handling arrays and edge cases. Let’s dive into the problem and the solution I came up with.<br>
+                    <strong>Problem Statement:</strong><br>
+                    The task is to increment a large integer represented by an array of digits. Each element in the array corresponds to a single digit of the integer, with the most significant digit at the start of the array. The integer does not contain any leading zeroes.<br>
+                    <strong>Example:</strong><br>
+                    Input: digits = [1, 2, 3]<br>
+                    Output: [1, 2, 4]<br>
+                    <strong>Solution Approach:</strong><br>
+                    I started by looping through the array from the last index to the first. This is because incrementing the number starts from the least significant digit (rightmost).<br>
+                    If the current digit is less than 9, I simply incremented it by 1 and returned the updated array.<br>
+                    If the digit is 9, setting it to 0 handles the carry-over for that digit. The loop then moves to the next more significant digit to the left.<br>
+                    If all digits are 9, the loop sets all of them to 0. In this case, I create a new array with an extra size to accommodate the new digit (e.g., 999 becomes 1000). The new array is initialized with a 1 at the start.<br>
+                    That’s it for today’s coding session! The "Plus One" problem is a great example of how to handle array manipulations and edge cases effectively. I hope you found this explanation helpful and that it gives you a clearer understanding of how to approach similar problems.<br>
+                    Stay tuned for more coding challenges and solutions in the coming days....!
+                </p>
             </div>
         </div>
     </main>
