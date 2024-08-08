@@ -33,64 +33,26 @@
         a:hover {
             text-decoration: underline;
         }
-        .nav {
-    display: flex;
-    gap: 1em;
-    margin-top: 1em;
-}
-
-.nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 1rem;
-    font-weight: 700;
-    position: relative;
-}
-.nav a:hover {
-    color: #ffdd57;
-}
-.nav a::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #ffdd57;
-    transition: width 0.3s;
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-}
-
-.nav a:hover::after {
-    width: 100%;
-}
-        body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-}
+        
     </style>
 </head>
 <body>
-    <header>
-        <h1>About Me</h1>
+    <header class="header">
+        <div class="logo">
+            <h1>Techy Girl!</h1>
+        </div>
         <nav class="nav" role="navigation" aria-label="Main Navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="blog.html">The Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <a href="index.html">Home</a>
+            <a href="blog.html">The Blog</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
         </nav>
+        <section id="home"></section>
+        <section id="blog"></section>
+        <section id="about"></section>
+        <section id="contact"></section>
     </header>
+    <hr class="separator">
     <div class="contact-info">
         <h1>Contact Me</h1>
         <p>If you have any questions or need further information, please email me at:</p>
