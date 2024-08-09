@@ -61,7 +61,31 @@
             <button class="accordion">Blog Post 3</button>
             <div class="panel">
                 <p><i>Date: August 9, 2024</i></p>
-                <p>Blog 3 post goes here...</p>
+                <p><strong>Tremendous Third Day of Blogging</strong><br>
+                    Today marks the tremendous third day of my blogging journey, and I'm excited to share my progress with you!<br>
+                    <strong>Tackling the LeetCode Problem</strong><br>
+                    Today's focus was on solving an easy-level LeetCode problem known as "Remove Duplicates from Sorted List". Let me walk you through the problem and the solution.<br>
+                    <strong>Problem Statement:</strong><br>
+                    Given the head of a sorted linked list, delete all duplicates such that each element appears only once. Return the linked list sorted as well.<br>
+                    <strong>Example:</strong><br>
+                    Input: head = [1,1,2]<br>
+                    Output: [1,2]<br>
+                    <strong>Solution Explanation:</strong><br>
+                    I started by checking if the input list is null. If the list is empty, we immediately return null since there are no nodes to process.<br>
+                    and then we initialize a ListNode reference named temp to the head of the list.<br>
+                    The loop continues as long as there is a next node to check. It will stop when temp.next is null, indicating that temp is at the last node of the list.<br>
+                    Inside the loop, we compare the value of the current node (temp.val) with the value of the next node (temp.next.val). If they are the same, we identify it as a duplicate. To remove the duplicate, we update temp.next to skip over the duplicate node (temp.next.next), effectively removing the duplicate from the list.<br>
+                    If the values are different, we simply move the temp pointer to the next node (temp = temp.next).<br>
+                    This problem has been a great exercise in understanding linked lists more proficiently and reinforcing the concepts of traversal and node manipulation.<br>
+                    <strong>Personal Update</strong><br>
+                    So, here’s a little personal update: this marks just the third day of my blogging journey. I’m planning to take a short break due to some personal reasons. I’ll be interrupting my blogging for a few days but will be back on Tuesday. When I return, I’ll update you with all the information and insights I’ve gathered over these days.<br>
+                    See you then!
+                </p>
+            </div>
+            <button class="accordion">Blog Post 4</button>
+            <div class="panel">
+                <p><i>Date: August 10, 2024</i></p>
+                <p>Blog 4 content goes here.....</p>
             </div>
         </div>
     </main>
